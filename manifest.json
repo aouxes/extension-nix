@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Расширение NIX",
+  "description": "Для Этажей, Авито и Циан",
+  "version": "1.0.0",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "NIX"
+  },
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "icons": {"128": "image/icon.png"},
+  "content_scripts": [
+    {
+      "matches": ["https://www.etagi.com/*", "https://www.avito.ru/*", "https://*.cian.ru/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
