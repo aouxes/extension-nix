@@ -57,7 +57,7 @@ window.onload = function() {
     width: 100%;
     min-height: 300px;
     overflow: auto;
-    background: #ADFFFF;
+    background: #ADFFFF; 
     color: black;
     `;
 
